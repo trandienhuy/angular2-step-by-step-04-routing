@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
-import { PeopleListComponent } from './people-list.component';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 import { PeopleService } from './people.service';
 
 @Component({
   selector: 'my-app',
   template: `
-  <h1>  {{title}} </h1>
-  <people-list></people-list>
+  <h1> {{title}} </h1>
+  <router-outlet>
   `,
-  directives: [PeopleListComponent],
-  // HERE! This registers the PeopleService 
-  // now Angular 2 knows to inject it when required
+  directives: [ROUTER_DIRECTIVES],
   providers: [PeopleService]
 })
 export class AppComponent {
