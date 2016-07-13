@@ -5,7 +5,7 @@ import { PeopleService } from './people.service';
 
 @Component({
   selector: 'people-list',
-  directives: [ROUTER_DIRECTIVES] 
+  directives: [ROUTER_DIRECTIVES] ,
   template: `
   <!-- this is the new syntax for ng-repeat -->
   <ul>

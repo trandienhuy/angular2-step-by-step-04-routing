@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Person } from '../people/person';
+import { Person } from './person';
 
 const PEOPLE : Person[] = [
       {id: 1, name: 'Luke Skywalker', height: 177, weight: 70},
