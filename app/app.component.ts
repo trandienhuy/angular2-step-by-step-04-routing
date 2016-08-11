@@ -8,7 +8,6 @@ import { PeopleService } from './people.service';
   <h1> {{title}} </h1>
   <router-outlet>
   `,
-  directives: [ROUTER_DIRECTIVES],
   providers: [PeopleService]
 })
 export class AppComponent {
